@@ -73,3 +73,9 @@ Le modèle fonctionne mais expose MediVox à un risque juridique :
 - [ ] Jargon traduit, défini une fois.
 - [ ] Tableau consolidé hiérarchisé inclus.
 - [ ] Le rapport **questionne** sans proposer l'architecture cible.
+
+> 💡 **Récap** : **un document, deux grilles** — flécher 👩‍💻 (Hélène) / ⚖️ (Marc),
+> traduire le jargon, ouvrir par une **synthèse exécutive** (le plus grave d'abord).
+> Hiérarchiser en 🔴/🟠/🟡, **questionner sans proposer** l'architecture cible (M7-B2).
+
+*Réflexe : si un décideur ne lit que la synthèse exécutive, doit-il pouvoir décider ? Si non, elle est à retravailler.*

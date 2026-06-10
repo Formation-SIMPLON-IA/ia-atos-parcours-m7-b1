@@ -71,3 +71,11 @@ Pour le DMS predictor MediVox :
 - [ ] Je traite l'art. 22 (décision automatisée + recours).
 - [ ] Je signale les risques **sans** rédiger d'AIPD.
 - [ ] Mes références d'articles sont présentes (même approximatives).
+
+> 💡 **Récap** : en santé, RGPD **art. 9** (données sensibles, base légale à
+> prouver) + **art. 22** (décision automatisée, recours humain) + AI Act **« haut
+> risque »** (Annexe III) ⇒ 3 obligations : **transparence, traçabilité, supervision
+> humaine**. L'auditeur **signale** ces risques avec une référence d'article ; il ne
+> rédige pas l'AIPD (hors mandat).
+
+*Réflexe : RGPD encadre les **données**, l'AI Act encadre le **système d'IA** — deux cadres complémentaires, pas interchangeables.*

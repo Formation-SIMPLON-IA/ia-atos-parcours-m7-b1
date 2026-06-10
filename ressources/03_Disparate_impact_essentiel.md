@@ -70,3 +70,12 @@ Sur le DMS predictor :
 - [ ] J'utilise la règle des 4/5 (0.80).
 - [ ] Je distingue effet légitime (âge médical) d'un biais.
 - [ ] Je signale si une variable sensible est utilisée en feature.
+
+> 💡 **Récap** : on calcule le DI **sur les prédictions du modèle** (pas seulement
+> sur le dataset) pour révéler une **amplification** du biais. Règle des **4/5**
+> (< 0.80 = biais). Aggravant majeur si une variable sensible (sexe) est utilisée
+> **en feature**. Distinguer un effet médical légitime (âge) d'un proxy discriminant.
+
+*Réflexe : un DI proche de 1 sur le dataset mais bas sur le modèle = le modèle **crée** le biais — souvent parce qu'il utilise la variable sensible.*
+
+*Et toujours : le DI est un **signal**, pas une preuve juridique — il déclenche l'investigation, il ne la remplace pas.*

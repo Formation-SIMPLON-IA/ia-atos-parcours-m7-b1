@@ -72,3 +72,10 @@ print(f"RSS={proc.memory_info().rss/1e6:.0f} Mo | inférence={t:.1f} ms "
 - [ ] Mes mesures sont à plusieurs volumes.
 - [ ] Je distingue coût compute et coût opérationnel.
 - [ ] Mon argument de sobriété est appuyé sur des chiffres.
+
+> 💡 **Récap** : **chiffrer** (RSS, temps, taille) et **comparer** à ≥ 1 alternative
+> légère — « ça consomme » ne vaut rien. Mesurer à plusieurs volumes, et distinguer
+> coût **compute** (souvent faible) du coût **opérationnel** (souvent le vrai sujet).
+> Pas de CO₂eq précis : ordre de grandeur suffit.
+
+*Réflexe : la vraie question de sobriété n'est pas « combien de Mo » mais « un modèle plus simple ferait-il aussi bien ? » — d'où la comparaison.*
