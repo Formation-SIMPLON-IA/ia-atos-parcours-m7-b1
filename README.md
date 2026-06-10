@@ -1,0 +1,40 @@
+# M7-B1 — Auditer une architecture IA héritée (MediVox Cliniques)
+
+> **Repo template.** « Use this template » → `M7-B1-medivox-audit-<prenom>`.
+> Tu audites le prédicteur DMS hérité et rends un rapport à Hélène (DT) et Marc (DPO).
+
+## 🚀 Démarrage
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python legacy/train.py        # le modèle à auditer (déjà fourni, regénérable)
+jupyter notebook notebooks/M7-B1_template.ipynb
+```
+
+**Fourni** : `legacy/` (code héritage à auditer — **ne le modifie pas**),
+`data/dms_dataset.csv` (10k séjours), `procedure_audit.md` (template 7 sections).
+
+## 🧭 Ce que tu produis
+
+| # | À faire | Fichier | Mini-cours |
+|---|---|---|---|
+| 1 | Appliquer la procédure d'audit | `procedure_audit.md` | `01` |
+| 2 | Volet éthique (biais + RGPD + AI Act) | `audit/01_ethique.md` | `02`, `03` |
+| 3 | Volet technique | `audit/02_technique.md` | `01` |
+| 4 | Volet ressources (psutil + alternatives) | `audit/03_ressources.md`, notebook | `04` |
+| 5 | Consolidation (tableau risques) | `audit/04_consolidation.md` | — |
+| 6 | Rapport 2 lectorats | `rapport_audit_TEMPLATE.md` | `05` |
+
+## ✅ Réussite
+
+- **Disparate impact calculé** sur ≥ 1 variable sensible (pas juste signalé).
+- 3 obligations AI Act citées (transparence / traçabilité / supervision).
+- Mesures psutil **chiffrées** et comparées à ≥ 1 alternative.
+- Tableau ≥ 12 lignes en 🔴/🟠/🟡.
+- Le rapport **hiérarchise et questionne** (ne propose pas la solution — c'est M7-B2).
+- 2 grilles de lecture (Hélène technique / Marc DPO). **Journal de bord** tenu.
+
+## 📚 Ressources
+
+Voir [`./ressources/`](./ressources/) — 5 mini-cours + `liens_officiels.md`.
