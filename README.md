@@ -8,9 +8,15 @@
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+pytest -q tests               # l'environnement d'audit fonctionne (3 tests verts)
 python legacy/train.py        # le modèle à auditer (déjà fourni, regénérable)
 jupyter notebook notebooks/M7-B1_template.ipynb
 ```
+
+> Variante `uv` : `uv venv .venv && source .venv/bin/activate` puis
+> `uv pip install -r requirements.txt`.
+> Dépannage : `No module named pip` → vous êtes dans un venv créé par `uv`,
+> utilisez `uv pip install …` (pas `pip install`).
 
 **Fourni** : `legacy/` (code héritage à auditer — **ne le modifie pas**),
 `data/dms_dataset.csv` (10k séjours), `procedure_audit.md` (template 7 sections).
