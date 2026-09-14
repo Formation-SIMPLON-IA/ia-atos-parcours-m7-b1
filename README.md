@@ -1,7 +1,9 @@
 # M7-B1 — Auditer une architecture IA héritée (MediVox Cliniques)
 
 > **Repo template.** « Use this template » → `M7-B1-medivox-audit-<prenom>`.
-> Tu audites le prédicteur DMS hérité et rends un rapport à Hélène (DT) et Marc (DPO).
+> Tu audites le prédicteur hérité — vendu comme « prédicteur DMS », il signale en
+> fait les **séjours à risque de prolongation** — et rends un rapport à Hélène (DT)
+> et Marc (DPO).
 
 ## 🚀 Démarrage
 
@@ -34,8 +36,10 @@ jupyter notebook notebooks/M7-B1_template.ipynb
 
 ## ✅ Réussite
 
-- **Disparate impact calculé** sur ≥ 1 variable sensible (pas juste signalé).
-- 3 obligations AI Act citées (transparence / traçabilité / supervision).
+- **Disparate impact calculé** sur ≥ 1 variable sensible, **puis investigué** :
+  préjudice défini, erreurs (FNR/FPR) par groupe, étiquette confrontée à `dms_jours`.
+- **Qualification AI Act raisonnée** (art. 6, usage réel décrit) et art. 22
+  examiné sur ses 2 conditions — pas de « santé = haut risque » présumé.
 - Mesures psutil **chiffrées** et comparées à ≥ 1 alternative.
 - Tableau ≥ 12 lignes en 🔴/🟠/🟡.
 - Le rapport **hiérarchise et questionne** (ne propose pas la solution — c'est M7-B2).
